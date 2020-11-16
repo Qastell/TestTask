@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol WelcomeViewProtocol {
+protocol WelcomeViewProtocol: class {
 }
 
 protocol WelcomeViewPresenterProtocol {
@@ -18,7 +18,7 @@ protocol WelcomeViewPresenterProtocol {
 
 class WelcomeViewPresenter: WelcomeViewPresenterProtocol {
     
-    var view: WelcomeViewProtocol?
+    weak var view: WelcomeViewProtocol?
     let router: RouterProtocol?
     
     required init(view: WelcomeViewProtocol, router: RouterProtocol, serviceFactory: ServiceFactoryProtocol? = nil) {

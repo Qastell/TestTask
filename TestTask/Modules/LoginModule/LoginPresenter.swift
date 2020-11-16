@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol LoginViewProtocol {
+protocol LoginViewProtocol: class {
 }
 
 protocol LoginViewPresenterProtocol {
@@ -20,7 +20,7 @@ protocol LoginViewPresenterProtocol {
 
 class LoginViewPresenter: LoginViewPresenterProtocol {
     
-    var view: LoginViewProtocol?
+    weak var view: LoginViewProtocol?
     let router: RouterProtocol?
     let serviceFactory: ServiceFactoryProtocol?
     

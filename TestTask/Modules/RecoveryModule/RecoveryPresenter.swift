@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RecoveryViewProtocol {
+protocol RecoveryViewProtocol: class {
 }
 
 protocol RecoveryViewPresenterProtocol {
@@ -18,7 +18,7 @@ protocol RecoveryViewPresenterProtocol {
 
 class RecoveryViewPresenter: RecoveryViewPresenterProtocol {
     
-    var view: RecoveryViewProtocol?
+    weak var view: RecoveryViewProtocol?
     let router: RouterProtocol?
     let serviceFactory: ServiceFactoryProtocol?
     

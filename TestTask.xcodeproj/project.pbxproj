@@ -131,9 +131,7 @@
 			children = (
 				3F4B5490255D51F7002C8D80 /* AppDelegate.swift */,
 				3F4B550B255D65E3002C8D80 /* imageEnum.swift */,
-				3F4B54DF255D534E002C8D80 /* WelcomeModule */,
-				3F4B54DB255D5340002C8D80 /* LoginModule */,
-				3F6A227A255E7C5900DF3D69 /* RecoveryModule */,
+				3F7C18262562855000B778FC /* Modules */,
 				3F6A2235255D96DA00DF3D69 /* Services */,
 				3F6A225A255D979000DF3D69 /* Base */,
 				3F4B54F8255D575D002C8D80 /* Extensions */,
@@ -227,6 +225,16 @@
 				3F6A2283255E7CAA00DF3D69 /* RecoveryPresenter.swift */,
 			);
 			path = RecoveryModule;
+			sourceTree = "<group>";
+		};
+		3F7C18262562855000B778FC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3F4B54DF255D534E002C8D80 /* WelcomeModule */,
+				3F4B54DB255D5340002C8D80 /* LoginModule */,
+				3F6A227A255E7C5900DF3D69 /* RecoveryModule */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
